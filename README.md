@@ -1,13 +1,8 @@
-# Installation wizard for October
+# Installation
 
-The wizard installation is a recommended way to install October. It is simpler than the command-line installation and doesn't require any special skills.
-
-1. Prepare a directory on your server that is empty. It can be a sub-directory, domain root or a sub-domain.
-1. [Download the installer archive file](https://github.com/octobercms/install/archive/master.zip).
-1. Unpack the installer archive to the prepared directory.
-1. Grant writing permissions on the installation directory and all its subdirectories and files.
-1. Navigate to the install.php script in your web browser.
-1. Follow the installation instructions.
+1. Prepare a directory on your local server. 
+1. Clone this repository (via ssh : git@github.com:CeliaCha/evaluation_7.git). (Depending on your connection it may take some time.)
+1. Import file eval_7_october.sql in your own database (may take some time too.)
 
 ## Minimum System Requirements
 
@@ -20,5 +15,26 @@ October CMS has a few system requirements:
 * ZipArchive PHP Library
 * GD PHP Library
 
-As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension.
-When using Ubuntu, this can be done via ``apt-get install php5-json``.
+
+## Database configuration
+
+1. Open file ./config/database.php
+1. In mysql properties, replace 'database' 'username' and 'password' values with your own identifiers.
+
+
+## Access to website & website admin
+
+* Website is located at this URL: http://path/to/yourlocalhost/october-celia/
+* Use the following link to log into the administration area: http://path/to/yourlocalhost/october-celia/backend
+* Admin identifiers -> login : simplon - password : plonsim
+
+
+## Modules (plugins)
+
+* In the admin area, navigate to Settings -> System -> Update & Plugins -> Manage Plugins
+* "Raviraj.Rjsliders" is the plugin I used to display slide on the main page (https://octobercms.com/plugin/raviraj-rjsliders)
+* "Celia.Simplon" is my own custom plugin. If you enable it, the url "./simplon" will work. If you disable it, this same url will send a 404 error. It's pure magic.
+
+
+
+
