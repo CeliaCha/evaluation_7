@@ -24,8 +24,8 @@ October CMS has a few system requirements:
 
 ## Access to website & website admin
 
-* Website is located at this URL: path/to/yourlocalhost/october-celia/
-* Use the following link to log into the administration area: path/to/yourlocalhost/october-celia/backend
+* Website is located at this URL: path/to/yourlocalhost/directoryname/
+* Use the following link to log into the administration area: path/to/yourlocalhost/directoryname/backend/
 * Admin identifiers -> login : simplon - password : plonsim
 
 
@@ -39,7 +39,7 @@ October CMS has a few system requirements:
 ## Troubleshooting
 
 * If something somewhere doesn't work, try to set folder permissions to 775. If it still doesn't work, try 777.
-* I had to replace "localhost" by "127.0.0.1" on the initial installation to made it work.
+* I had to replace "localhost" by "127.0.0.1" on the initial installation to make it work.
 
 
 
