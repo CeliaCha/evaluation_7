@@ -1,12 +1,12 @@
-1529588250a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:187:"<div id="footer">
+1529593335a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:157:"<div id="footer">
     <div class="container">
         <hr />
-        <p class="muted credit">&copy; 2013 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} by CeliaCha.</p>
     </div>
 </div>
-";s:5:"mtime";i:1529569887;s:6:"markup";s:186:"<div id="footer">
+";s:5:"mtime";i:1529590247;s:6:"markup";s:156:"<div id="footer">
     <div class="container">
         <hr />
-        <p class="muted credit">&copy; 2013 - {{ "now"|date("Y") }} Alexey Bobkov &amp; Samuel Georges.</p>
+        <p class="muted credit">&copy; {{ "now"|date("Y") }} by CeliaCha.</p>
     </div>
 </div>";s:4:"code";N;}}
