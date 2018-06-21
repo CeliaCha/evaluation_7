@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 21 juin 2018 à 12:43
+-- Généré le :  jeu. 21 juin 2018 à 15:01
 -- Version du serveur :  5.7.21
 -- Version de PHP :  7.1.7
 
@@ -41,7 +41,8 @@ CREATE TABLE `backend_access_log` (
 --
 
 INSERT INTO `backend_access_log` (`id`, `user_id`, `ip_address`, `created_at`, `updated_at`) VALUES
-(1, 1, '::1', '2018-06-21 05:55:08', '2018-06-21 05:55:08');
+(1, 1, '::1', '2018-06-21 05:55:08', '2018-06-21 05:55:08'),
+(2, 1, '::1', '2018-06-21 12:03:08', '2018-06-21 12:03:08');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,7 @@ CREATE TABLE `backend_users` (
 --
 
 INSERT INTO `backend_users` (`id`, `first_name`, `last_name`, `login`, `email`, `password`, `activation_code`, `persist_code`, `reset_password_code`, `permissions`, `is_activated`, `role_id`, `activated_at`, `last_login`, `created_at`, `updated_at`, `is_superuser`) VALUES
-(1, 'Jacques', 'Bramart', 'simplon', 'admin@domain.fr', '$2y$10$3gayUQiuBlDHBf1p5ko6cu2nrC9SPsqu925ZH.3nqOgQJyWkxj2j.', NULL, '$2y$10$RfAYiUSg24O6JFdDDCYRPOjR.EOFkf7x7ECXDtPOWmK6XBQnkMx62', NULL, '', 1, 2, NULL, '2018-06-21 05:55:08', '2018-06-21 05:45:05', '2018-06-21 05:55:08', 1);
+(1, 'Jacques', 'Bramart', 'simplon', 'admin@domain.fr', '$2y$10$3gayUQiuBlDHBf1p5ko6cu2nrC9SPsqu925ZH.3nqOgQJyWkxj2j.', NULL, '$2y$10$fDJwaKZLRW72rRal5vPfRuFl420f5fNJvDhEAHW4NDgCh4yNASbpG', NULL, '', 1, 2, NULL, '2018-06-21 12:03:08', '2018-06-21 05:45:05', '2018-06-21 12:03:08', 1);
 
 -- --------------------------------------------------------
 
@@ -645,7 +646,7 @@ CREATE TABLE `system_plugin_versions` (
 INSERT INTO `system_plugin_versions` (`id`, `code`, `version`, `created_at`, `is_disabled`, `is_frozen`) VALUES
 (1, 'October.Demo', '1.0.1', '2018-06-21 05:45:05', 0, 0),
 (3, 'Raviraj.Rjsliders', '1.1.0', '2018-06-21 07:37:09', 0, 0),
-(5, 'Celia.Simplon', '1.0.1', '2018-06-21 08:13:59', 0, 0);
+(5, 'Celia.Simplon', '1.0.1', '2018-06-21 08:13:59', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -910,7 +911,7 @@ ALTER TABLE `system_settings`
 -- AUTO_INCREMENT pour la table `backend_access_log`
 --
 ALTER TABLE `backend_access_log`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `backend_users`
